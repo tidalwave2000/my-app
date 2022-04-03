@@ -9,7 +9,7 @@ class SearchBar extends React.Component {
 	//evoke the arrow function to prevent an error and bind this to onSubmit
 	onFormSubmit = (event) => {
 		event.preventDefault();//prevents a re-render when form is submitted
-		this.props.onSubmit(this.state.term);
+		this.props.onSubmit(this.state.term); //allowed the child to call the parent
 	}
 
 
